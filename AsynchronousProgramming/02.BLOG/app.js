@@ -39,7 +39,7 @@ const postLoader = function () {
         .then(dataHandler);
 }
 
-const postViewer = function () {
+const postViewer = () => {
     postId = posts.options[posts.selectedIndex].value;
 
     const dataHandler = function (data) {
@@ -48,7 +48,10 @@ const postViewer = function () {
         }
     }
 
-    fetch(url + lastAddres.post + postId + json)
-        .then((response) => response.json())
-        .then(dataHandler);
+    const response = await fetch(url + lastAddres.post + postId + json);
+    dataHandler(response);
+
+    // fetch(url + lastAddres.post + postId + json)
+    //     .then((response) => response.json())
+    //     .then(dataHandler);
 }
