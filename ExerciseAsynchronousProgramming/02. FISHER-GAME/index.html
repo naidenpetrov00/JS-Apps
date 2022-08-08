@@ -32,13 +32,13 @@
                 <label>Capture Time</label>
                 <input type="number" class="captureTime" value="80" />
                 <hr>
-                <button class="update">Update</button>
-                <button class="delete">Delete</button>
+                <button class="update" onclick="update()">Update</button>
+                <button class="delete" onclick="deleteCatcher()">Delete</button>
             </div>
         </div>
     </fieldset>
     <aside>
-        <button class="load">Load</button>
+        <button class="load" onclick="load()">Load</button>
         <fieldset id="addForm">
             <legend>Add Catch</legend>
             <label>Angler</label>
@@ -53,7 +53,7 @@
             <input type="text" class="bait" />
             <label>Capture Time</label>
             <input type="number" class="captureTime" />
-            <button class="add">Add</button>
+            <button class="add" onclick="add()">Add</button>
         </fieldset>
     </aside>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
