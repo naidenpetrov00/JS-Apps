@@ -10,11 +10,14 @@
 
 <body>
     <div>
-        <label for="bookNumber">Book number</label>
+        <label for="bookNumber">Search book by number</label>
         <input type="number" id="bookNumber" name="bookNumber">
         <input id="search" type="button" value="Search" onclick="searchBook()">
-        <ul id="books">
-        </ul>
+        <label>Add book</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" placeholder="author">
+        <input type="text" id="bookTitle" name="bookTitle" placeholder="title">
+        <input id="add" type="button" value="Add" onclick="addBook()">
+        <ul id="books">Books:</ul>
     </div>
     <div>
     </div>
