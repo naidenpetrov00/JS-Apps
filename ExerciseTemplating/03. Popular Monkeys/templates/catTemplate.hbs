@@ -1,0 +1,10 @@
+{{#each monkeys}}
+<div class="monkey" id="{{id}}">
+    <h2>{{name}}</h2>
+    <img src={{image}}>
+    <button class="showBtn" onclick="showInfo({{id}})">Show Info</button>
+    <p class="info" style="display: none" id="{{id}}">
+        {{info}}
+    </p>
+</div>
+{{/each}}
