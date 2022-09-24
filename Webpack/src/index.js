@@ -1,3 +1,5 @@
+require('./style.css');
+
 const SampleMath = require('./math');
 const Person = require('./person');
 
