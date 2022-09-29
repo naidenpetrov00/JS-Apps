@@ -3,8 +3,8 @@ const homeController = function () {
     const getHome = function (context) {
 
         const loggedIn = storage.getData('userInfo') !== null;
-        
-        if(loggedIn){
+
+        if (loggedIn) {
             const username = JSON.parse(storage.getData('userInfo')).username;
             context.loggedIn = loggedIn;
             context.username = username;
@@ -13,7 +13,7 @@ const homeController = function () {
         context.loadPartials({
             header: "../views/common/header.hbs",
             footer: "../views/common/footer.hbs"
-        }).then(function(){
+        }).then(function () {
             this.partial('../views/home/home.hbs')
         })
     };
