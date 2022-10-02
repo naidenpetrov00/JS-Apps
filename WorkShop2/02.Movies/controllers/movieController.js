@@ -1,9 +1,8 @@
 const movieController = function () {
-    const movielocation = 'http://127.0.0.1:5500/02.Movies/#/movies'
-    const moviesElement = document.getElementsByClassName('text-center')[0];
+    const moviesElementId = 'movie-section';
 
     const scrollToMovies = function(){
-        scroller(moviesElement, movielocation);
+        scroller(moviesElementId);
     }
 
     return {

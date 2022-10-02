@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <div class="container" id="container" href="#/index.html">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container" id="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand text-light" href="#/movies">Movies</a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item user">
@@ -22,7 +22,7 @@
           <a class="nav-link" href="#">Logout</a>
         </li>
         <li class="nav-item guest">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#/login">Login</a>
         </li>
         <li class="nav-item guest">
           <a class="nav-link" href="#/register">Register</a>
@@ -30,7 +30,7 @@
       </ul>
     </nav>
 
-    <section id="home-page" class="view-section">
+    <section id="home-page" class="view-section" href="#/index.html">
       <div class="jumbotron jumbotron-fluid text-light" style="background-color: #343a40">
         <img src="https://slicksmovieblog.files.wordpress.com/2014/08/cropped-movie-banner-e1408372575210.jpg"
           class="img-fluid" alt="Responsive image" style="width: 150%; height: 200px" />
@@ -41,7 +41,7 @@
         </p>
       </div>
 
-      <h1 class="text-center">Movies</h1>
+      <h1 id="movie-section" class="text-center">Movies</h1>
 
       <section id="add-movie-button" class="user">
         <a href="#" class="btn btn-warning">Add Movie</a>
@@ -134,10 +134,13 @@
   <script src="../node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
   <script src="../node_modules/handlebars/dist/handlebars.js"></script>
 
-  <script src="./controllers/helpers/scroller.js"></script>
+  <script src="./helpers/elementTaker.js"></script>
+  <script src="./helpers/scroller.js"></script>
   <script src="./controllers/homeController.js"></script>
   <script src="./controllers/movieController.js"></script>
   <script src="./controllers/userController.js"></script>
+  <script src="./views/register/register.hbs"></script>
+  <script src="./views/login/login.hbs"></script>
 
   <script src="./src/app.js" type="module"></script>
 

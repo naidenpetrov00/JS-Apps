@@ -1,4 +1,5 @@
-const scroller = function (element, location) {
+const scroller = function (elementId) {
+    const element = takeById(elementId)
     const coordinates = element.getBoundingClientRect()
 
     window.scroll({
@@ -6,6 +7,4 @@ const scroller = function (element, location) {
         left: coordinates.x,
         behavior: "smooth",
     });
-
-    window.location.href = location;
 };
