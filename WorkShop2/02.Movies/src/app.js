@@ -8,10 +8,13 @@ $(() => {
 
         //register
         this.get('#/register', userController.getRegister);
-        this.post('#/register', userController.postRegister)
+        this.post('#/register', userController.postRegister);
 
         //login
-        this.get('#/login', userController.getLogin)
+        this.get('#/login', userController.getLogin);
+
+        //logout
+        this.get('#/logout', userController.getLogout);
     });
 
     app.run('#/index.html');

@@ -20,17 +20,22 @@ const userController = function () {
         scroller(loginFormId,);
     }
 
-    const postRegister = function (context) {
-        userModel
+    const getLogout = function () {
+        userModel.logout();
     }
 
-    const postLogin = function(){
+    const postRegister = function (context) {
+        userModel.register(context.params);
+    }
+
+    const postLogin = function () {
 
     }
 
     return {
         getRegister,
         getLogin,
+        getLogout,
         postLogin,
         postRegister,
     }
