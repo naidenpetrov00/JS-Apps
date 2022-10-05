@@ -28,8 +28,8 @@ const userController = function () {
         userModel.register(context.params);
     }
 
-    const postLogin = function () {
-
+    const postLogin = function (context) {
+        userModel.login(context.params);
     }
 
     return {

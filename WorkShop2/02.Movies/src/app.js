@@ -12,6 +12,7 @@ $(() => {
 
         //login
         this.get('#/login', userController.getLogin);
+        this.post('#/login', userController.postLogin);
 
         //logout
         this.get('#/logout', userController.getLogout);
